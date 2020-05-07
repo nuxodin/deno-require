@@ -9,7 +9,7 @@ globalThis.require = function(path) {
 
 /*
 todo: test if this works
-Object.defineProperty(thisGlobal, 'require', {
+Object.defineProperty(globalThis, 'require', {
   get:function(){
   
   }
