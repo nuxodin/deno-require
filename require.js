@@ -1,4 +1,4 @@
-import { createRequire } from "https://deno.land/std/node/module.ts";
+import { createRequire } from "https://deno.land/std@v0.42.0/node/module.ts";
 
 thisGlobal.require = function(path) {
   var e = new Error();
