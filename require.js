@@ -1,6 +1,6 @@
 import { createRequire } from "https://deno.land/std@v0.42.0/node/module.ts";
 
-thisGlobal.require = function(path) {
+globalThis.require = function(path) {
   var e = new Error();
   var calledFile = e.stack.split("\n")[2].replace(/^ +at /, '').replace(/:[0-9]+:[0-9]+/,'');
   var requireFunction = createRequireFromPath(calledFile);
