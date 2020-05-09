@@ -4,7 +4,16 @@ add require without "createRequire"
 # ussage
 
 ```js
-import 'https://raw.githubusercontent.com/nuxodin/deno-require/master/require.js';
+import {require} 'https://raw.githubusercontent.com/nuxodin/deno-require/master/require.js';
+require('./lib.js');
 ```
 
-and now you have a global require function that works like in node.
+or
+
+```js
+import {globalize} 'https://raw.githubusercontent.com/nuxodin/deno-require/master/require.js';
+globalize();
+
+//use require everywhere
+require('./lib.js');
+```
